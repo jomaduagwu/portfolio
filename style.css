@@ -13,7 +13,19 @@ head {
 body{
     display:flex;
     flex-direction: column;
-    background-color: wheat;
+    background-color: rgb(203, 223, 220);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
+}
+
+h2 {
+    text-align:center;
+}
+nav{
+    display:block;
+    text-align: right;
+}
+
+nav footer {
+    text-align: center;
 }
