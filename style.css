@@ -25,9 +25,10 @@ nav {
 }
 
 img {
+    height: 150px;
     /* want to set max image size depending on screen */
     /* set a rounded border */
-    border-radius: 20px;
+    border-radius: 50px;
     /* sets display to inline-block */
     display: inline-block;
     /* sets margin to center elements */
