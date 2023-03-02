@@ -1,30 +1,47 @@
 * {
-    box-sizing: border-box;
-}
-html {
-    font-family: sans-serif;
-    display: block;
-}
-
-head {
-    display: none;
+    /* box-sizing: border-box; */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body{
-    display:flex;
-    flex-direction: column;
+    /* display:flex;
+    flex-direction: column; */
     background-color: rgb(203, 223, 220);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    color: rgb(60, 57, 57);
+    background-color:rgb(146, 152, 157);
+    padding-left: 7%;
+}
     
+nav {
+    text-decoration: none; /* not working */
+    text-align: right;
+    padding-top: 20px;
+}
+
+img {
+    /* want to set max image size depending on screen */
+    /* set a rounded border */
+    border-radius: 20px;
+    /* sets display to inline-block */
+    display: inline-block;
+    /* sets margin to center elements */
+    margin: 0 auto;    
+} 
+
+section {
+    display: contents;
 }
 
 h2 {
     text-align:center;
 }
-nav{
-    display:block;
-    text-align: right;
-}
+
 
 nav footer {
     text-align: center;
