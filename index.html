@@ -7,26 +7,30 @@
     <title>Jochebed Maduagwu's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <!-- Header -->
     <header>
-        <h1>Jochebed Maduagwu</h1>
+        <h1 class="title">Jochebed Maduagwu</h1>
+        <!-- <img src="./images/watercolor-g2c921aabf_1920.jpg" alt="background image"/> -->
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>  
     </header>
 
-    <!-- Navbar -->
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About Me</a>
-        <a href="#">Work</a>
-        <a href="#">Contact</a>
-    </nav>
+    
 
     <!-- Body -->
     <main>
         <section class="about">
             <h2>About Me</h2>
             <figure>
-                <img src="./images/jmphoto.jpeg" alt="Jochebed Maduagwu"/>
+                <img class="profile-img" src="./images/jmphoto.jpeg" alt="Jochebed Maduagwu"/>
             </figure>
             <p>Hello! Way nor furnished sir procuring therefore but. Warmth far manner myself 
                 active are cannot called. Set her half end girl rich met. Me allowance departure 
@@ -43,34 +47,23 @@
         </section>
         <section class="work">
             <h2>Work</h2>
-            <section class="containers">
-                <header>Project 1</header>
+            <section class="projects">
+                <article class="project-item">Project 1</article>
                 <!-- Project 1 content here -->
-            </section>
-            <section class="containers">
-                <header>Project 2</header>
-                <!-- Project 1 content here -->
-            </section>
-            <section class="containers">
-                <header>Project 3</header>
-                <!-- Project 1 content here -->
-            </section>
-            <section class="containers">
-                <header>Project 4</header>
-                <!-- Project 1 content here -->
-            </section>
-            <section class="containers">
-                <header>Project 5</header>
-                <!-- Project 1 content here -->
-            </section>
-            <section class="containers">
-                <header>Project 6</header>
-                <!-- Project 1 content here -->
+                <article class="project-item">Project 2</article>
+                <article class="project-item">Project 3</article>
+                <article class="project-item">Project 4</article>
+                <article class="project-item">Project 5</article>
+                <article class="project-item">Project 6</article>
             </section>
         </section>
     </main>
     <footer>
         <h3>Contact Me</h3>
+        <p>
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="First Last"/>
+        </p>
         <nav>
                     <a href="https://github.com/jomaduagwu">GitHub</a>
                     <a href="https://www.linkedin.com/in/jochebed-maduagwu/">LinkedIn</a>
