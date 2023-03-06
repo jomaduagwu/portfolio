@@ -3,6 +3,7 @@
 ## Description
 
 The purpose of this project is to build a deployed portfolio page of work samples to showcase my skills and talents to employers looking to hire a web developer. 
+Deployed website: https://jomaduagwu.github.io/portfolio/
 
 ## Table of Contents (Optional)
 
