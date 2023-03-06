@@ -22,21 +22,37 @@ header {
 nav ul{
     list-style: none;
     display:flex;
-    justify-content:flex-end; /*check if ok to use*/
+    justify-content:flex-end; 
     margin: 10px;
     padding: 0;
 }
 nav li{
     margin: 0 2px;
 }
-/* remove the underline from the links and set the color*/
+/* removed the underline from the links and set the color*/
 nav a{
     text-decoration:none;
-    color: var(--white);
+    color: rgb(37, 35, 35);
     padding: 2px;
+    font-weight:bold;
+    
 }
+/* set a hover effect for the navigation links */
 nav a:hover{
     color:var(--light-purple);
+}
+
+/* set the image and paragraph to be side-to-side */
+.about-content {
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width:100%;
+}
+
+/* changed the font-style to italic */
+.about-content p {
+    font-style: italic;
 }
 
 /* set a rounded border for profile image */
@@ -46,65 +62,79 @@ nav a:hover{
     border-radius: 50px;
 }
 
-h2{
+h2, h3{
     text-align:center;
 }
 
-h3{
-    text-align: center;
-}
-
-/* .work{
-    display: flex;
-} */
-
-.projects{
+.project-container{
     display:flex;
-    flex-direction:row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.project-item {
-    background-color:rgb(173, 169, 165);
-    text-align:center;
-    height: 120px;
-    width: 250px;
-    border: 1px solid --dark-purple;
-    padding:20px;
-    margin:10px;
-    border-radius:15px;
+.project-items  {
+    flex-basis: 25%;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--dark-purple);
 }
 
-.project-img{
-    max-width: 75%;
-    max-height: 75%;
+/* set the first project item to be larger in size than the other items */
+.project-items.large {
+    flex-basis: 50%;
+    margin-bottom: 20px;
 }
+
+.project-items img {
+    width: 100%;
+    height: 75%;
+}
+
+.project-row {
+    display:flex;
+    flex-basis: 100%;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.contact {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.contact nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    color: var(--dark-purple);
+    position: relative;
+    bottom: 2%;
+    width: 100%;
+}
+
 /* set project-items sizes for standard screens and laptops */
 @media screen and (min-width:769px){
-   .project-item {
+   .project-items {
     width:25%;
     background-color: var(--light-purple);
    }
 }
 /* set project-items sizes for iPad screen size */
 @media screen and (max-width:768px){
-    .project-item{
+    .project-items{
         width:100%;
-        background-color:aquamarine;
-    }
-    
+        background-color: var(--pink);
+    } 
 }
 /* set project-item sizes for mobile devices */
 @media screen and (max-width:480px){
-    .project-item{
+    .project-items{
         width:100%;
         background-color:rgb(196, 45, 216);
     }
     
-}
-footer nav {
-    text-align: center;
-    position: rabsolute;
-    bottom: 2%;
-    width: 100%;
 }
