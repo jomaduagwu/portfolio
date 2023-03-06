@@ -1,11 +1,14 @@
+
+:root{
+    --dark-purple:#a662d9;
+    --pink:#da8ddd;
+    --light-purple:#b7a2ee;
+    --white:#fff;
+    --light-pink: #f8f2fe;
+}
 * {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-body{
-    background-color: rgb(203, 223, 220);
-}
-
 
 header {
     display:flex;
@@ -13,17 +16,15 @@ header {
     align-items: center;
     padding: 1%;
     width: 100%;
-    background-color:#5a5656;
     color: rgb(246, 242, 242);
 }
 /* set the navigation links to display on the same line and justified to the right */
 nav ul{
     list-style: none;
     display:flex;
-    justify-content: flex-end; /*check if ok to use*/
-    margin: 0;
+    justify-content:flex-end; /*check if ok to use*/
+    margin: 10px;
     padding: 0;
-    /* padding-top: 10px; */
 }
 nav li{
     margin: 0 2px;
@@ -31,18 +32,17 @@ nav li{
 /* remove the underline from the links and set the color*/
 nav a{
     text-decoration:none;
-    color: #efe9e9;
-    /* display: block; */
+    color: var(--white);
     padding: 2px;
 }
 nav a:hover{
-    color:aquamarine;
+    color:var(--light-purple);
 }
 
+/* set a rounded border for profile image */
 .profile-img {
     height: 150px;
     display: flex;
-    /* set a rounded border */
     border-radius: 50px;
 }
 
@@ -69,14 +69,39 @@ h3{
     text-align:center;
     height: 120px;
     width: 250px;
-    border: 1px solid black;
+    border: 1px solid --dark-purple;
     padding:20px;
     margin:10px;
     border-radius:15px;
-    /* flex-direction: row; 
-    flex-wrap: wrap;  */
 }
 
+.project-img{
+    max-width: 75%;
+    max-height: 75%;
+}
+/* set project-items sizes for standard screens and laptops */
+@media screen and (min-width:769px){
+   .project-item {
+    width:25%;
+    background-color: var(--light-purple);
+   }
+}
+/* set project-items sizes for iPad screen size */
+@media screen and (max-width:768px){
+    .project-item{
+        width:100%;
+        background-color:aquamarine;
+    }
+    
+}
+/* set project-item sizes for mobile devices */
+@media screen and (max-width:480px){
+    .project-item{
+        width:100%;
+        background-color:rgb(196, 45, 216);
+    }
+    
+}
 footer nav {
     text-align: center;
     position: rabsolute;
