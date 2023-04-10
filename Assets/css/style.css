@@ -81,8 +81,15 @@ h2, h3{
     border-color: var(--dark-purple);
 }
 
+.form-control {
+    width: 75%;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 /* set the first project item to be larger in size than the other items */
-.project-items.large {
+/* .project-items.large {
     flex-basis: 50%;
     margin-bottom: 20px;
 }
@@ -114,27 +121,27 @@ h2, h3{
     position: relative;
     bottom: 2%;
     width: 100%;
-}
+} */
 
 /* set project-items sizes for standard screens and laptops */
-@media screen and (min-width:769px){
+/* @media screen and (min-width:769px){
    .project-items {
     width:25%;
     background-color: var(--light-purple);
    }
-}
+} */
 /* set project-items sizes for iPad screen size */
-@media screen and (max-width:768px){
+/* @media screen and (max-width:768px){
     .project-items{
         width:100%;
         background-color: var(--pink);
     } 
-}
+} */
 /* set project-item sizes for mobile devices */
-@media screen and (max-width:480px){
+/* @media screen and (max-width:480px){
     .project-items{
         width:100%;
         background-color:rgb(196, 45, 216);
     }
     
-}
+} */
